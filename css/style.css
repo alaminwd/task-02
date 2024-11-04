@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  ol,
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span{
+    margin-bottom: 0;
+    line-height: 0.8;
+    font-family: "Manrope", sans-serif;
+  }
+  p{
+    margin-bottom: 0;
+    line-height: 0.8;
+    font-family: "Manrope", sans-serif;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  :root {
+    --red: #E50000;
+  }
+  
+  html,
+  body {
+    scroll-behavior: unset !important;
+    background: #1A1A1A;
+  }
+  .title{
+    margin-bottom: 30px;
+  }
+  .title h2{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 57px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  .title p{
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #999999;
+  }
+/* ============== Common Css End ================ */
+
+/* ============== Navber Css Start ============== */
+nav{
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+nav .navbar-brand{
+    height: 71.96px;
+    width: 76.5px;
+}
+nav ul {
+    padding: 10px 0px;
+    background: #0F0F0F;
+    border-radius: 12px;
+    border: 4px solid #1F1F1F;
+}
+nav ul li{
+    background: #1A1A1A;
+    border: 1px solid #1A1A1A;
+    border-radius: 8px;
+    padding: 14px 24px;
+}
+nav ul li a{
+    color: #BFBFBF !important;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: #fff;
+}
+.nav-icon{
+  gap: 30px;
+}
+.nav-icon i{
+  color: #fff;
+  height: 34px;
+  width: 34px;
+}
+
+
+/* =========Banner Section Css ==========*/
+#hero{
+}
+#hero .hero-item{
+  margin: 20px;
+  height: 860px;
+  position: relative;
+}
+#hero .hero-item .overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hero .hero-item::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(0deg, rgba(20,20,20,0) 0%, rgba(20,20,20,1) 100%);
+  content:"";
+}
+#hero .hero-item::before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  /* background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%); */
+  background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%);
+  content:"";
+}
+#hero .img-container {
+  gap: 20px;
+  display: flex;
+  margin: 20px 0px;
+  height: 200px;
+}
+#hero .img-container img{
+  border-radius: 20px;
+}
+.hero-content{
+  gap: 50px;
+}
+.hero-content .title{
+  text-align: center;
+}
+.hero-content .title h1{
+  color: #FFFFFF;
+  font-family: Manrope;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 87px;
+
+}
+.hero-content .details{
+  text-align: center;
+}
+.hero-content .details p{
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #999999;
+}
+.hero-content .hero-btn{
+  text-align: center;
+  margin-top: 18px;
+}
+.hero-content .hero-btn button{
+  background: var(--red);
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 18px 24px 18px 24px;
+
+}
+.hero-content .hero-btn button i{
+  color: #FFFFFF;
+  width: 28px;
+  height: 28px;
+  padding-left: 5.25px;
+}
+
+#category{
+  padding: 80px 0px;
+}
+#category .button-container{
+  display: flex;
+  padding: 16px;
+}
+#category .arrow{
+  background: #1A1A1A;
+  border: 1px solid #1F1F1F;
+  padding: 14px;
+  gap: 10px;
+  border-radius: 8px ;
+}
+#category .arrow i{
+  color: #FFFFFF;
+}
+#category .indicators-btn {
+  padding: 11px 0px;
+}
+#category .indicators-btn i{
+  width: 23px;
+  height: 4px;
+  gap: 0px;
+  border-radius: 100px;
+  opacity: 0px;
+  color: #333333;
+}
+#category .indicators-btn .active{
+  color: var(--red) !important;
+}
+
+#category .categories .card-item{
+  height:342px;
+  border-radius: 12px;
+  border: 1px solid #262626;
+  background: #1A1A1A;
+  padding: 30px;
+  position: relative;
+}
+#category .categories .card-item::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,0) 100%);
+  content: "";
+
+}
+.img-content{
+  gap: 5px;
+  display: flex;
+  margin-bottom: 5px;
+}
+.card-below {
+  display: flex;
+}
+.card-below .text{
+  width: 70%;
+}
+.card-below h4{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  position: absolute;
+  z-index: 999999;
+}
+.card-below .card-icon{
+  width: 30%;
+  text-align: right;
+}
+.card-below .card-icon a{
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 99999;
+}
+.card-below .card-icon a i{
+  font-size: 18px;
+}
+
+/* =======================
+
+===========================*/
+#streaming{
+  padding: 80px 0px;
+}
+.streaming-items{
+  margin: 30px 0px;
+  padding: 50px;
+  display: flex;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  align-items: center;
+}
+.stream-icon{
+  padding: 16px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  
+}
+.stream-icon i{
+  color: var(--red);
+}
+#streaming .centent{
+  margin-left: 10px;
+}
+#streaming .centent h6{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  color: #FFFFFF;
+
+}
+  /* ===============================
+    FAQ Section 
+  ================================== */
+#faq{
+  padding: 80px 0px; 
+}
+#faq .fa{
+  padding: 80px 0px;
+  width: 100%;
+}
+#faq .fa .items{
+  padding: 20px;
+  display: flex;
+}
+#faq .header-button{
+  text-align: right;
+}
+#faq .header-button button{
+  padding: 18px 24px;
+  border-radius: 8px;
+  background: var(--red);
+  color: #FFFFFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+
+}
+#faq .qtn{
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px #262626;
+  color: #FFFFFF;
+  background: #1F1F1F;
+  text-align: center;
+}
+#faq .text-content{
+  margin-left: 10px;
+  height: 100px;
+  overflow: hidden;
+}
+#faq .head{
+  display: flex;
+}
+#faq .head h2{
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: left;
+  width: 85%;
+}
+#faq .text-cotenet .head a{
+  text-align: right;
+  width: 15%;
+}
+#faq .below .text p{
+  color: #999999;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+
+/* =========================================
+      Pricing Plan Section
+========================================*/
+#plan{
+  padding: 80px 0px;
+}
+#plan .toggle-buttons {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #262626;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#plan .toggle-buttons button{
+  padding: 14px 24px;
+  color: #FFFFFF;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  background: transparent;
+  border: 0px !important;
+}
+#plan .toggle-buttons .active{
+  border: 0px !important;
+  border-radius: 10px;
+  background: #1F1F1F !important;
+}
+#plan button:focus:not(:focus-visible) {
+  border: 0px !important;
+  border-radius: 10px;
+  background: #1F1F1F !important;
+}
+#plan .pricing-card{
+  padding: 50px;
+  border-radius: 12px;
+  border: 1px solid #262626;
+}
+#plan .pricing-card .card-header h4{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+#plan .pricing-card .card-header p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #999999;
+}
+#plan .card-body .price{
+  margin: 40px 0px;
+}
+#plan .card-body .price h4{
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 29.2px;
+  text-align: left;
+}
+#plan .card-body .price h4 span{
+  color: #999999;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 13.14px;
+  text-align: left;
+}
+#plan .card-footer .pur-btn button{
+padding: 12px 17px;
+border-radius: 8px;
+border: 1px solid #262626;
+font-family: Manrope;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: left;
+background: #141414;
+color: #FFFFFF;
+transition: all linear .4s;
+}
+#plan .card-footer .pur-btn button:hover{
+  background: var(--red);
+}
